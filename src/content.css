@@ -1,0 +1,40 @@
+#content {
+	display: grid;
+	grid-template-rows: auto 80px;
+}
+
+#messages {
+	height: calc(100vh - 80px);
+	overflow-y: auto;
+}
+
+#content #messages {
+	background: green;
+	padding: 20px;
+}
+
+#content #new-messages {
+padding: 20px;
+}
+
+#content .message {
+	background: white;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	box-shadow: 0 2px 20px rgba(255, 0, 0, .1);
+	border-radius: 5px;
+}
+
+.message .author {
+	font-weight: 700;
+}
+
+.message .date {
+	color: grey;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.message .body {
+	margin-top: 10px
+}
